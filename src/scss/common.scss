@@ -1,0 +1,70 @@
+// Обнуление стилей
+
+@import "nullstyle";
+
+// _____________________
+
+
+// Подключение шрифтов
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+// _____________________
+
+
+// Переменные
+
+$maxWidthConteiner: 1366;
+$md: $maxWidthConteiner + 40;
+$md1: 991;
+$md2: 767;
+$md3: 479;
+
+$black: #000000;
+$white: #ffffff;
+$grey: #dddddd;
+
+// _____________________
+
+
+// Шаблоны
+%border {
+    border: 1px solid #3f4e5c;
+    border-radius: 5px;
+}
+// _____________________
+
+
+// Миксины
+// _____________________
+
+
+
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    background: #f7fafd;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+[class*="__conteiner"] {
+    margin: 0 auto;
+    padding: 20px 20px 0;
+    width: 100%;
+    max-width: $md + px;
+}
+
+.main {
+    flex: 1 1 auto;
+}
